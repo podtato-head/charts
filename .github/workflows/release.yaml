@@ -28,3 +28,12 @@ jobs:
         uses: helm/chart-releaser-action@v1.2.1
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+
+          NAME                     READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS               IMAGES                                 SELECTOR
+          podtato-head-entry       0/1     1            0           2m32s   podtato-head-entry       ghcr.io/podtato-head/entry:0.2.1       app.kubernetes.io/component=podtato-head-entry,app.kubernetes.io/instance=podtato-head,app.kubernetes.io/name=podtato-head
+          podtato-head-hat         0/1     1            0           2m32s   podtato-head-hat         ghcr.io/podtato-head/hat:0.2.1         app.kubernetes.io/component=podtato-head-hat,app.kubernetes.io/instance=podtato-head,app.kubernetes.io/name=podtato-head
+          podtato-head-left-arm    0/1     1            0           2m32s   podtato-head-left-arm    ghcr.io/podtato-head/left-arm:0.2.1    app.kubernetes.io/component=podtato-head-left-arm,app.kubernetes.io/instance=podtato-head,app.kubernetes.io/name=podtato-head
+          podtato-head-left-leg    0/1     1            0           2m32s   podtato-head-left-leg    ghcr.io/podtato-head/left-leg:0.2.1    app.kubernetes.io/component=podtato-head-left-leg,app.kubernetes.io/instance=podtato-head,app.kubernetes.io/name=podtato-head
+          podtato-head-right-arm   0/1     1            0           2m32s   podtato-head-right-arm   ghcr.io/podtato-head/right-arm:0.2.1   app.kubernetes.io/component=podtato-head-right-arm,app.kubernetes.io/instance=podtato-head,app.kubernetes.io/name=podtato-head
+          podtato-head-right-leg   0/1     1            0           2m32s   podtato-head-right-leg   ghcr.io/podtato-head/right-leg:0.2.1   app.kubernetes.io/component=podtato-head-right-leg,app.kubernetes.io/instance=podtato-head,app.kubernetes.io/name=podtato-head
